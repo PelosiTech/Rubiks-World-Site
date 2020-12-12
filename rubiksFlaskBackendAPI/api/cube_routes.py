@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request, make_response
-from models import Cube, Image, db
+from ..models import Cube, Image, db
 import json
 
 

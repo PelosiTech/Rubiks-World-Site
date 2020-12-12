@@ -11,11 +11,11 @@ from flask_jwt_extended import (
     set_refresh_cookies, unset_jwt_cookies
 )
 
-from models import db, User
-from api.user_routes import user_routes
-from api.session_routes import session_routes
-from api.cube_routes import cube_routes
-from config import Config
+from .models import db, User
+from .api.user_routes import user_routes
+from .api.session_routes import session_routes
+from .api.cube_routes import cube_routes
+from .config import Config
 
 app = Flask(__name__)
 app.config.from_object(Config)
