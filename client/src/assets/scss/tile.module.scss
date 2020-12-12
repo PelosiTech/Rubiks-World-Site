@@ -1,0 +1,18 @@
+.tileContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 210px;
+    
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}

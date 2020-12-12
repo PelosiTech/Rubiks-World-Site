@@ -1,0 +1,21 @@
+.container {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.cropped {
+    width: 71.6vw;
+}
+
+
+.pictureContainer {
+    margin-top: 0px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 1340px;
+
+}

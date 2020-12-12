@@ -1,0 +1,121 @@
+.productContainer {
+    height: 125vh;
+    margin-top: 0px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.topContainer {
+    height: 50vh;
+    padding-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+.leftPane {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 50%;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.cubeInfo {
+    margin-bottom: 4vh;
+}
+
+.rightPane {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 50%;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.cubeTitle {
+    height: 40%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.cubeSku {
+    height: 40%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.cubeCart {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.cubeCartParent {
+    border-top: 1px solid black;
+    height: 10%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.middleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 40vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 3vh;
+}
+
+.productDetails {
+    text-align: center;
+}
+.productDetailsInfo {
+    width: 50%;
+    text-align: center;
+}
+
+.bottomContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.cubeDetailsTitle {
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: gray;
+}
+
+.cubeDetails {
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
