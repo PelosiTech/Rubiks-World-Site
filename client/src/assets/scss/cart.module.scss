@@ -1,0 +1,140 @@
+
+
+.topContainer {
+    height: 50vh;
+    padding-top: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+}
+
+.leftPane {
+    display: flex;
+    overflow: scroll;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 50%;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.cartInfo {
+    margin-bottom: 4vh;
+}
+
+.middleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 40vw;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    margin-top: 3vh;
+}
+
+.productDetails {
+    text-align: center;
+}
+.productDetailsInfo {
+    width: 50%;
+    text-align: center;
+}
+
+.rightPane {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    width: 50%;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+.orderInfo {
+    width: 90%;   
+}
+
+.orderSummary {
+    display: flex;
+    height: 15vh;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.orderDetails {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.creditCard {
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bottomInfo {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+
+.bottomInfoEach {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bottomInfoEach:first-child {
+    border-right: 1px solid black;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.topHalfCart {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bottomHalfCart {
+    height: 100%;
+    width: 100%;
+}
+
+.cartInfoItems{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+.cartContainer {
+    height: 70vh;
+    margin-top: 0px;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
