@@ -2,8 +2,8 @@ from dotenv import load_dotenv
 load_dotenv()
 from werkzeug.security import generate_password_hash
 
-from rubiksFlaskBackendAPI import app, db
-from rubiksFlaskBackendAPI.models import User, Cube, Image
+from backend import app, db
+from backend.models import User, Cube, Image
 
 with app.app_context():
   db.drop_all()

@@ -15,16 +15,16 @@ RUN ["npm", "run", "build", "--prefix", "client"]
 # Move our react build for Flask to serve
 # Use cp here because we're copying files inside our working directory, not from
 # our host machine.
-RUN ["cp", "-r", "client/build", "rubiksFlaskBackendAPI/static"]
-RUN ["cp", "-r", "rubiksFlaskBackendAPI/static/static/js", "rubiksFlaskBackendAPI/static"]
-RUN ["cp", "-r", "rubiksFlaskBackendAPI/static/static/css", "rubiksFlaskBackendAPI/static"]
+RUN ["cp", "-r", "client/build", "backend/static"]
+RUN ["cp", "-r", "backend/static/static/js", "backend/static"]
+RUN ["cp", "-r", "backend/static/static/css", "backend/static"]
 
 # Setup Flask environment
-ENV FLASK_APP=rubiksFlaskBackendAPI
+ENV FLASK_APP=backend
 ENV FLASK_ENV=production
 ENV SQLALCHEMY_ECHO=True
 ENV REACT_APP_BASE_URL=https://rubiks-world.herokuapp.com/ 
 EXPOSE 8000
 
 # Run flask environment
-CMD gunicorn rubiksFlaskBackendAPI:app
+CMD gunicorn backend:app
