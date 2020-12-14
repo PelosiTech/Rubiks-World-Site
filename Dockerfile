@@ -27,4 +27,4 @@ ENV REACT_APP_BASE_URL=https://rubiks-world.herokuapp.com/
 EXPOSE 8000
 
 # Run flask environment
-CMD gunicorn backend:app
+CMD gunicorn rubiksFlaskBackendAPI:app
