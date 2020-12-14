@@ -15,7 +15,7 @@ from flask_jwt_extended import (
 from backend.models import db, User
 from backend.api.user_routes import user_routes
 from backend.api.session_routes import session_routes
-from backend.api.camera_routes import camera_routes
+from backend.api.cube_routes import cube_routes
 from backend.config import Config
 
 app = Flask(__name__)
