@@ -25,7 +25,7 @@ app.config['JWT_COOKIE_CSRF_PROTECT'] = False
 app.config['JWT_SECRET_KEY'] = 'C1D55AF87585F574A7C7566ED281D'
 app.register_blueprint(user_routes, url_prefix='/api/users')
 app.register_blueprint(session_routes, url_prefix='/api/session')
-app.register_blueprint(camera_routes, url_prefix='/api/cameras')
+app.register_blueprint(cube_routes, url_prefix='/api/cube')
 
 db.init_app(app)
 Migrate(app, db)
