@@ -11,11 +11,12 @@ from flask_jwt_extended import (
     set_refresh_cookies, unset_jwt_cookies
 )
 
-from .models import db, User
-from .api.user_routes import user_routes
-from .api.session_routes import session_routes
-from .api.cube_routes import cube_routes
-from .config import Config
+
+from backend.models import db, User
+from backend.api.user_routes import user_routes
+from backend.api.session_routes import session_routes
+from backend.api.camera_routes import camera_routes
+from backend.config import Config
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -24,7 +25,7 @@ app.config['JWT_COOKIE_CSRF_PROTECT'] = False
 app.config['JWT_SECRET_KEY'] = 'C1D55AF87585F574A7C7566ED281D'
 app.register_blueprint(user_routes, url_prefix='/api/users')
 app.register_blueprint(session_routes, url_prefix='/api/session')
-app.register_blueprint(cube_routes, url_prefix='/api/cubes')
+app.register_blueprint(camera_routes, url_prefix='/api/cameras')
 
 db.init_app(app)
 Migrate(app, db)
@@ -32,15 +33,13 @@ jwt = JWTManager(app)
 
 ## Application Security
 CORS(app)
-
-
 @app.after_request
 def inject_csrf_token(response):
     response.set_cookie('csrf_token',
-                        generate_csrf(),
-                        secure=True if os.environ.get('FLASK_ENV') else False,
-                        samesite='Strict' if os.environ.get('FLASK_ENV') else None,
-                        httponly=True)
+        generate_csrf(),
+        secure=True if os.environ.get('FLASK_ENV') else False,
+        samesite='Strict' if os.environ.get('FLASK_ENV') else None,
+        httponly=True)
     return response
 
 
