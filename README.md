@@ -1,4 +1,4 @@
-#Rubiks-World-Site
+# Rubiks-World-Site
 *By Carlo Pelosi - [Visit Rubiks-World-Site](https://rubiks-world.herokuapp.com)*
 ## My Goat.com Clone
 **Browse Different brands of Rubiks Cubes**
