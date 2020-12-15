@@ -1,4 +1,59 @@
 #Rubiks-World-Site
+*By Carlo Pelosi - [Visit Rubiks-World-Site](https://rubiks-world.herokuapp.com)*
+## My Goat.com Clone
+**Browse Different brands of Rubiks Cubes**
+
+**Table of Contents**
+* [Rubiks-World Overview](#Rubiks-World-overview)
+* [Demonstrations](#demonstrations)
+* [App Description](#app-description)
+* [Technologies](#technologies)
+
+
+# Rubiks-World overview
+The application is built off a handmade API backend using Flask of popular cubes, while the front end is maintained by react and redux. Rubiks World is a basic modern retail website for rubiks cubes.
+
+# Demonstrations
+
+## Landing Page: 
+<img width="600" src="https://i.gyazo.com/5ba6647e88d561a682c1f5e0d12587a3.png">
+
+## Log In:
+<img width="600" src="https://i.gyazo.com/ca4d13d3cd48947f75f7a83726c3c956.png">
+
+## Browse cube:
+<img width="600" src="https://i.gyazo.com/4c4257da64590bb18d4e8ff975118839.png">
+
+## View cube:
+<img width="600" src="https://i.gyazo.com/7e52de6c3152c46a3c80622a0991ee56.png">
+
+## Add To Cart:
+<img width="600" src="https://i.gyazo.com/c02856707ba69835df2d432808009d0e.png">
+
+# App Description
+-   Full stack application utilizing state management and a handmade custom API backend.  
+-   A goat clone look-alike but with a cube spin.  
+-   A working cart with redux persists.  
+
+# Define Database Functionality + Input Data
+1.  Redux persist stores User info and cubes added to cart.  
+2.  User authentication provided by csrf and JWT token.  
+3.  Search querying done but using redux state managament and running a filter method on the array.  
+
+# Tools
+-   VS Code
+-   Google Chrome Redux Dev tools
+-   GitHub
+-   handemade API
+-   Url references to beach cube stored in database
+
+# Technologies
+-   Deployment: Docker / Heroku
+-   Frontend UI engine: React / Redux
+-   Backend server: Python / Flask
+-   RDBMS: PostgresSQL v12
+-   ORM: SQLAlchemy 
+ 
 
 # Database Structure
 
