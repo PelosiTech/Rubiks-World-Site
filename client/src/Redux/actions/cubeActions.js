@@ -18,7 +18,7 @@ export const getCube = (cube) => {
 
 export const retrieveCubes = () => {
     return async dispatch => {
-        const res = await fetch(`/api/cubes`)
+        const res = await fetch(`/api/cubes/`)
 
         if (res.ok) {
             const data = await res.json()
